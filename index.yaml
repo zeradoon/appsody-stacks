@@ -1,0 +1,50 @@
+apiVersion: v2
+stacks:
+- id: my-spring-boot2-test
+  name: Starter Sample
+  version: 0.1.3
+  description: Runnable starter stack, copy to create a new stack
+  license: Apache-2.0
+  language: bash
+  maintainers:
+  - name: Henry Nash
+    email: henry.nash@uk.ibm.com
+    github-id: henrynash
+  default-template: simple
+  src: file:///Users/zeradoon/.appsody/stacks/dev.local/my-spring-boot2-test.v0.1.3.source.tar.gz
+  templates:
+  - id: simple
+    url: file:///Users/zeradoon/.appsody/stacks/dev.local/my-spring-boot2-test.v0.1.3.templates.simple.tar.gz
+  image: dev.local/appsody/my-spring-boot2-test:0.1.3
+- id: my-spring-boot2
+  name: Spring Boot®
+  version: 0.3.29
+  description: Spring Boot using OpenJ9 and Maven
+  license: Apache-2.0
+  language: java
+  maintainers:
+  - name: Erin Schnabel
+    email: schnabel@us.ibm.com
+    github-id: ebullient
+  - name: Ozzy Osborne
+    email: ozzy@ca.ibm.com
+    github-id: bardweller
+  - name: Richard Trotter
+    email: rtrotter@us.ibm.com
+    github-id: richard-trotter
+  - name: Harish Yayi
+    email: hyayi@us.ibm.com
+    github-id: yharish991
+  default-template: default
+  src: file:///Users/zeradoon/.appsody/stacks/dev.local/my-spring-boot2.v0.3.29.source.tar.gz
+  templates:
+  - id: default
+    url: file:///Users/zeradoon/.appsody/stacks/dev.local/my-spring-boot2.v0.3.29.templates.default.tar.gz
+  - id: kotlin
+    url: file:///Users/zeradoon/.appsody/stacks/dev.local/my-spring-boot2.v0.3.29.templates.kotlin.tar.gz
+  - id: kafka
+    url: file:///Users/zeradoon/.appsody/stacks/dev.local/my-spring-boot2.v0.3.29.templates.kafka.tar.gz
+  requirements:
+    docker-version: '>= 17.09.0'
+    appsody-version: '>= 0.5.0'
+  image: dev.local/appsody/my-spring-boot2:0.3.29
