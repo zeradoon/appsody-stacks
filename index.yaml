@@ -1,18 +1,18 @@
 apiVersion: v2
 stacks:
-- id: my-spring-boot2-test
+- id: my-stack-empty
   name: Starter Sample
   version: 0.1.3
   description: Runnable starter stack, copy to create a new stack
   license: Apache-2.0
-  language: bash
+  language: java
   maintainers:
-  - name: Henry Nash
-    email: henry.nash@uk.ibm.com
-    github-id: henrynash
+  - name: Sunwon Yoon
+    email: zeradoon@sk.com
+    github-id: zeradoon
   default-template: simple
-  src: https://zeradoon.github.io/appsody-stacks/download/my-spring-boot2-test.v0.1.3.source.tar.gz
+  src: https://zeradoon.github.io/appsody-stacks/download/my-stack-empty.v0.1.3.source.tar.gz
   templates:
   - id: simple
-    url: https://zeradoon.github.io/appsody-stacks/download/my-spring-boot2-test.v0.1.3.templates.simple.tar.gz
-  image: docker.io/zeradoon/my-spring-boot2-test:0.1.3
+    url: https://zeradoon.github.io/appsody-stacks/download/my-stack-empty.v0.1.3.templates.simple.tar.gz
+  image: docker.io/zeradoon/my-stack-empty:0.1.3

@@ -1,0 +1,20 @@
+name: Spring Boot®
+version: 0.3.29
+description: Spring Boot using OpenJ9 and Maven
+license: Apache-2.0
+language: java
+maintainers:
+  - name: Sunwon Yoon
+    email: zeradoon@sk.com
+    github-id: zeradoon
+default-template: default
+requirements:
+   appsody-version: ">= 0.5.0"
+   docker-version: ">= 17.09.0"
+templating-data:
+  baseimage: maven:3.6-jdk-8-openj9
+  finalimage: adoptopenjdk/openjdk8-openj9:ubi-jre
+  parentpomgroup: dev.appsody
+  parentpomid: spring-boot2-stack
+  parentpomrange: '[0.3, 0.4)'
+  parentpomfilename: appsody-boot2-pom.xml
