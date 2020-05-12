@@ -1,18 +1,21 @@
 apiVersion: v2
 stacks:
-- id: my-stack-empty
-  name: Starter Sample
-  version: 0.1.3
-  description: Runnable starter stack, copy to create a new stack
+- id: rest-template
+  name: Spring Boot®
+  version: 0.3.29
+  description: Spring Boot using OpenJ9 and Maven
   license: Apache-2.0
   language: java
   maintainers:
   - name: Sunwon Yoon
     email: zeradoon@sk.com
     github-id: zeradoon
-  default-template: simple
-  src: https://zeradoon.github.io/appsody-stacks/download/my-stack-empty.v0.1.3.source.tar.gz
+  default-template: default
+  src: https://bitbucket.org/cnaflab/appsody-stacks/raw/dac3b6f25664ab8229e2eb2488823610e5a5d317/download/rest-template.v0.3.29.source.tar.gz
   templates:
-  - id: simple
-    url: https://zeradoon.github.io/appsody-stacks/download/my-stack-empty.v0.1.3.templates.simple.tar.gz
-  image: docker.io/zeradoon/my-stack-empty:0.1.3
+  - id: default
+    url: https://bitbucket.org/cnaflab/appsody-stacks/raw/dac3b6f25664ab8229e2eb2488823610e5a5d317/download/rest-template.v0.3.29.templates.default.tar.gz
+  requirements:
+    docker-version: '>= 17.09.0'
+    appsody-version: '>= 0.5.0'
+  image: 391511973453.dkr.ecr.ap-northeast-2.amazonaws.com/rest-template:0.3
