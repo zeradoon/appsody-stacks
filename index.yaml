@@ -11,10 +11,10 @@ stacks:
     email: zeradoon@sk.com
     github-id: zeradoon
   default-template: default
-  src: https://bitbucket.org/cnaflab/appsody-stacks/raw/dac3b6f25664ab8229e2eb2488823610e5a5d317/download/rest-template.v0.3.29.source.tar.gz
+  src: https://github.com/zeradoon/appsody-stacks/raw/master/download/rest-template.v0.3.29.source.tar.gz
   templates:
   - id: default
-    url: https://bitbucket.org/cnaflab/appsody-stacks/raw/dac3b6f25664ab8229e2eb2488823610e5a5d317/download/rest-template.v0.3.29.templates.default.tar.gz
+    url: https://github.com/zeradoon/appsody-stacks/raw/master/download/rest-template.v0.3.29.templates.default.tar.gz
   requirements:
     docker-version: '>= 17.09.0'
     appsody-version: '>= 0.5.0'
